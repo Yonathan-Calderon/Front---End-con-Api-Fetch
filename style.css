@@ -1,0 +1,232 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+body{
+  background-image: url(/assets/img/BackgroundImage.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+
+}
+.tittle{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #262626;
+}
+.personasList {
+  margin-top: 20px;
+}
+
+.card {
+  background: #faebd5;
+  padding: 15px;
+  min-width: 200px;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+}
+
+.card .options {
+  margin-top: 8px;
+}
+
+/*Boton principal*/
+.btnAdd {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 24px;
+  border: 1px solid #0d5fb7;
+  border-radius: 8px;
+  background: #18b3ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#18b3ff), to(#0d5fb7));
+  background: -moz-linear-gradient(top, #18b3ff, #0d5fb7);
+  background: linear-gradient(to bottom, #18b3ff, #0d5fb7);
+  -webkit-box-shadow: #1dd7ff 0px 0px 9px 0px;
+  -moz-box-shadow: #1dd7ff 0px 0px 9px 0px;
+  box-shadow: #1dd7ff 0px 0px 9px 0px;
+  text-shadow: #08386c 1px 1px 1px;
+  font: normal normal bold 20px arial;
+  color: #ffffff;
+  text-decoration: none;
+}
+.btnAdd:hover,
+.btnAdd:focus {
+  border: 1px solid #0f70d7;
+  background: #1dd7ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1dd7ff), to(#1072dc));
+  background: -moz-linear-gradient(top, #1dd7ff, #1072dc);
+  background: linear-gradient(to bottom, #1dd7ff, #1072dc);
+  color: #ffffff;
+  text-decoration: none;
+}
+.btnAdd:active {
+  background: #0d5fb7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d5fb7), to(#0d5fb7));
+  background: -moz-linear-gradient(top, #0d5fb7, #0d5fb7);
+  background: linear-gradient(to bottom, #0d5fb7, #0d5fb7);
+}
+/*Boton Editar*/
+
+.btnEdit {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px 6px;
+  border: 1px solid #1c5e45;
+  border-radius: 8px;
+  background: #35b082;
+  background: -webkit-gradient(linear, left top, left bottom, from(#35b082), to(#1c5e45));
+  background: -moz-linear-gradient(top, #35b082, #1c5e45);
+  background: linear-gradient(to bottom, #35b082, #1c5e45);
+  -webkit-box-shadow: #40d39c 0px 0px 9px 0px;
+  -moz-box-shadow: #40d39c 0px 0px 9px 0px;
+  box-shadow: #40d39c 0px 0px 9px 0px;
+  text-shadow: #113729 1px 1px 1px;
+  font: normal normal bold 15px comic sans ms;
+  color: #ffffff;
+  text-decoration: none;
+}
+.btnEdit:hover,
+.btnEdit:focus {
+  border: 1px solid #216e51;
+  background: #40d39c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#40d39c), to(#227153));
+  background: -moz-linear-gradient(top, #40d39c, #227153);
+  background: linear-gradient(to bottom, #40d39c, #227153);
+  color: #ffffff;
+  text-decoration: none;
+}
+.btnEdit:active {
+  background: #1c5e45;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c5e45), to(#1c5e45));
+  background: -moz-linear-gradient(top, #1c5e45, #1c5e45);
+  background: linear-gradient(to bottom, #1c5e45, #1c5e45);
+}
+
+
+
+.btn-close-form {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #da0047;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  right: -12px;
+  top: -12px;
+}
+
+/*Boton Eliminar*/
+
+.btnRemove {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px 6px;
+  border: 1px solid #790a1c;
+  border-radius: 8px;
+  background: #e31335;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e31335), to(#790a1c));
+  background: -moz-linear-gradient(top, #e31335, #790a1c);
+  background: linear-gradient(to bottom, #e31335, #790a1c);
+  -webkit-box-shadow: #ff1740 0px 0px 9px 0px;
+  -moz-box-shadow: #ff1740 0px 0px 9px 0px;
+  box-shadow: #ff1740 0px 0px 9px 0px;
+  text-shadow: #470611 1px 1px 1px;
+  font: normal normal bold 15px comic sans ms;
+  color: #ffffff;
+  text-decoration: none;
+}
+.btnRemove:hover,
+.btnRemove:focus {
+  border: 1px solid #8e0c21;
+  background: #ff1740;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff1740), to(#910c22));
+  background: -moz-linear-gradient(top, #ff1740, #910c22);
+  background: linear-gradient(to bottom, #ff1740, #910c22);
+  color: #ffffff;
+  text-decoration: none;
+}
+.btnRemove:active {
+  background: #790a1c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#790a1c), to(#790a1c));
+  background: -moz-linear-gradient(top, #790a1c, #790a1c);
+  background: linear-gradient(to bottom, #790a1c, #790a1c);
+}
+
+
+/*------- FORM ------- */
+.form-content{
+  padding: 25px;
+  border-radius: 8px;
+  position: relative;
+  background: #faebd5;
+  max-width: 300px;
+  margin: 1.75rem auto;
+}
+
+.form-content .control {
+  padding: 5px 0;
+}
+
+.form-content .form-footer {
+  margin-top: 8px;
+}
+
+label {
+  width: 70px;
+  display: inline-block;
+}
+/*------- FORM end -------*/
+
+.modal {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+.msg-error {
+  color: #da0047;
+  display: block;
+  margin-top: 10px;
+}
+
+.alert {
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  right: 30px;
+  z-index: 150;
+}
+
+.alert.success {
+  background: #8eed8e;
+  border: 1px #60d560 solid;
+  color: #15540d;
+}
+
+.alert.error {
+  background: #ffb6b6;
+  border: 1px #e14747 solid;
+  color: #8a0606;
+}

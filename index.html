@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD FRONTEND</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <h2 class="tittle">CRUD con Fetch: API REST - NodeJS and MySQL</h2>
+  <button type="button" id="btnAdd" class="btnAdd">Agregar producto</button>
+
+  <div class="modal" id="modalAdd">
+    <div class="form-content">
+      <div class="btn-close-form" onclick="closeModalAdd()">X</div>
+      <div class="form-body">
+        <form id="formAdd">
+          <div class="control">
+            <label>Nombre: </label>
+            <input type="text" name="nombre">
+          </div>
+          <div class="control">
+            <label>Apellido: </label>           
+            <input type="text" name="apellido">
+          </div>
+          <div class="control">
+            <label>Edad: </label>
+            <input type="number" name="edad">
+          </div>
+        </form>
+      </div>
+      <div class="form-footer">
+          <button class="btnRemove" type="button" onclick="closeModalAdd()">Cancelar</button>
+          <button class="btnEdit" type="button" onclick="createPersona()">Guardar</button>
+      </div>
+      <span id="msgFormAdd" class="msg-error"></span>
+    </div>
+  </div>
+
+  <div class="modal" id="modalEdit">
+    <div class="form-content">
+      <div class="btn-close-form" onclick="closeModalEdit()">X</div>
+      <div class="form-body">
+        <form id="formEdit">
+          <input type="hidden" id="ID">
+          <div class="control">
+            <label>Nombre: </label>
+            <input type="text" id="nombre">
+          </div>
+          <div class="control">
+            <label>Apellido: </label>
+            <input type="text" id="apellido">
+          </div>
+          <div class="control">
+            <label>Edad: </label>
+            <input type="number" id="edad"></div>
+        </form>
+      </div>
+      <div class="form-footer">
+          <button class="btnRemove" type="button" onclick="closeModalEdit()">Cancelar</button>
+          <button class="btnEdit" type="button" onclick="updatePersona()">Guardar cambios</button>
+      </div>
+      <span id="msgFormEdit" class="msg-error"></span>
+    </div>
+  </div>
+
+  <div class="modal" id="modalConfirm">
+    <div class="form-content">
+      <div class="btn-close-form" onclick="closeModalConfirm()">X</div>
+      <div class="form-body">
+        <h3>Eliminar</h3>
+        <p>¿Estas seguro de eliminar la persona?</p>
+      </div>
+      <div class="form-footer">
+          <button class="btnEdit" type="button" onclick="confirmDelete(false)">No</button>
+          <button class="btnRemove" type="button" onclick="confirmDelete(true)">Si</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert" id="alert">Algo sucedió..</div>
+
+  <div id="personasList" class="personasList"></div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
